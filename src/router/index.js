@@ -16,9 +16,15 @@ import CropImage from '@/views/CropImage.vue';
 import ResetPassword from '@/views/ResetPassword.vue'
 import Terms from '@/views/Terms.vue'
 import Privacy from '@/views/Privacy.vue'
+import Incubator from '@/views/Incubator'
 
 // all the different paths for the SPA
 const routes = [
+  {
+    path: '/incubator',
+    name: 'Incubator',
+    component: Incubator
+  },
   {
     path: '/login',
     name: 'Login',
