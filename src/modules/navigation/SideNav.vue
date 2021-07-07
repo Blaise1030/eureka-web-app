@@ -18,6 +18,12 @@
         <div class="side-nav__text">Find Mentors</div>
       </div>
     </router-link>
+    <router-link :to="{ name: 'Incubator' }">
+      <div class="side-nav__group">
+        <img class="side-nav__icon" src="@/assets/info-icon.svg" />
+        <div class="side-nav__text">Incubator</div>
+      </div>
+    </router-link>
     <router-link
       :to="{ name: 'Admin' }"
       v-if="userIsAdmin"
@@ -26,13 +32,7 @@
         <img class="side-nav__icon" src="@/assets/info-icon.svg" />
         <div class="side-nav__text">Mission Control</div>
       </div>
-    </router-link>
-    <router-link :to="{ name: 'Incubator' }">
-      <div class="side-nav__group">
-        <img class="side-nav__icon" src="@/assets/info-icon.svg" />
-        <div class="side-nav__text">Incubator</div>
-      </div>
-    </router-link>
+    </router-link>    
     <router-link :to="{ name: 'Feedback' }">
       <div class="side-nav__group side-nav__group--bottom">
         <img class="side-nav__icon" src="@/assets/feedback-icon.svg" />
